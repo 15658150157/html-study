@@ -8,8 +8,18 @@
 <head>
 <!--字符集为utf8-->
 <meta charset="utf8">
+
+<!--使用 <meta> 元素来描述HTML文档的描述，关键词，作者，字符集等，默认不需要-->
+<!--
+<meta name="description" content="免费在线教程">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="runoob">-->
+
 <!--title为浏览器标签页显示的内容-->
 <title>HTML Study</title>
+<!--Base指定页面上所有链接的默认URL-->
+<!--<base href="http://www.runoob.com/images/" target="_blank">-->
+
 </head>
 
 <!--body为可以看到的网页内容-->
@@ -17,17 +27,20 @@
 	<!--标题H1到H6-->
 	<!--搜索引擎使用标题为您的网页的结构和内容编制索引-->
 	<h1>HTML H1</h1>
-    <h6>HTML H6</h6>
+	<h6>HTML H6</h6>
 	<!--段落-->
 	<p>This is paragraph</p>
 	<!--链接-->
 	<p><a href="http://www.baidu.com">This is a link</a></p>
 	<!--图片-->
-	<img src="/images/logo.png" width="258" height="39" />
+	<p>IMG Test</p>
+	<!--<img src="pic_test.jpg" width="258" height="39" />-->
+	<img src="pic_test.jpg" />
+
 	<!--换行, <br />这种方式换行是正确的关闭方式，是更长远的保障-->
-	<p>br<br/>test</p>
+	<p>br<br />test</p>
 	<!--水平线-->
-	<hr>
+	<hr />
 
 	<!--HTML不会自己排版，换行，空格等都会被一个空格替代-->
 	<p>
@@ -36,9 +49,61 @@
 				夜来风雨声，
 				  花落知多少。
 		</p>
-	
-	<!--文本格式化待学习-->
-	
+    
+
+    
+	<!--文本格式化-->
+    <!--  <b> 与<i> 定义粗体或斜体文本。
+    <strong> 或者 <em>意味着你要呈现的文本是重要的，
+    所以要突出显示。现今所有主要浏览器都能渲染各种效果的字体。
+    不过，未来浏览器可能会支持更好的渲染效果-->
+    <b>这个文本是加粗的</b>
+    <br />
+    <strong>这个文本是加粗的</strong>
+    <br />
+    <big>这个文本字体放大</big>
+    <br />
+    <em>这个文本是斜体的</em>
+    <br />
+    <i>这个文本是斜体的</i>
+    <br />
+    <small>这个文本是缩小的</small>
+    <br />
+    这个文本包含<sub>下标</sub>
+    <br />
+    这个文本包含<sup>上标</sup>
+    <pre>
+            此例演示如何使用 pre 标签
+            对空行和    空格
+            进行控制
+            </pre>
+        <p>该段落文字从左到右显示。</p>  
+        <p><bdo dir="rtl">该段落文字从右到左显示。</bdo></p> 
+    <!--鼠标放到字段上，显示完整的内容-->
+    <abbr title="etcetera">etc.</abbr>
+    <br />
+    <acronym title="World Wide Web">WWW</acronym>
+    <br />
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+    <br />
+
+
+    <!--链接-->
+    <!--Target属性用来指定在哪里显示-->
+    <a href="http://www.runoob.com/" target="_blank">访问菜鸟教程!</a>
+    <p>创建图片链接:
+    <a href="http://www.runoob.com/html/html-tutorial.html">
+    <img  border="10" src="smiley.gif" alt="HTML 教程" width="32" height="32"></a></p>
+    
+    <p>无边框的图片链接:
+    <a href="http://www.runoob.com/html/html-tutorial.html">
+    <img border="0" src="smiley.gif" alt="HTML 教程" width="32" height="32"></a></p>
+
+    <!--Tips的用法-->
+    <p><a id="tips">link here</a></p>
+    <p><a href="#tips">asdfsdf</a></p>
+
+
 </body>
 
 </html>
