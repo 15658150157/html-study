@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <title>JavaScript Test</title>
+    <script>
+        'use strict'                //使用strict模式，变量必须被声明
+        var a = "123";
+        console.log(a);
+
+        //使用·来表示多行
+        var b = `Multi
+        line
+        string`;
+        console.log(b);
+
+        var name = 'yhx';
+        var age = 30;
+        var message = 'hello '+name+' age: '+age;
+        console.log(message);
+
+        var o = {
+        name: 'Jack',
+        age: 20,
+        city: 'Beijing'
+    };
+    for (var key in o) {
+        console.log(key); // 'name', 'age', 'city'
+    }
+
+    var {hostname:domain, pathname:path} = location;
+    console.log('domain: '+domain);
+    console.log(path);
+    </script>
+</head>
+
+<body>
+    <h1>####My JavaScript Test Start####</h1>
+</body>
+</html>
